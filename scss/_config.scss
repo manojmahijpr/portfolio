@@ -5,8 +5,13 @@ $home-image: url(../img/background.jpg);
 $background-opacity: 0.9;
 
 @mixin easeOut {
-    transition: all 1.5 ease-out;
+    transition: all 0.5s ease-out;
 }
+
+@mixin showItemTranslate {
+    transform: translate3d(0, 0, 0);
+}
+
 
 @mixin backgroud {
     @if $show-home-image {
